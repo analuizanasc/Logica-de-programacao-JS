@@ -1,0 +1,26 @@
+<! Questão para praticar conhecimentos de estruturas de repetição. Programa para dizer todos os números entre de 30 a 40, exceto 33 e 37.>
+<meta charset="UTF-8">
+
+<script>
+    function pulaLinha() {
+        document.write("<br>");
+    }
+    function mostra(msg){
+        document.write(msg);
+        pulaLinha();
+    }
+
+    var inicio = 30;
+    mostra("Os números entre 30 e 40: (exceto 33 e 37)")
+    while(inicio <= 40) {
+        if (inicio == 33){
+            inicio = inicio + 1
+        } else if (inicio == 37) {
+            inicio = inicio + 1
+        } else {
+            document.write(inicio + ",");
+            inicio = inicio + 1;
+        }
+    }
+    mostra(" Fim!")
+</script>

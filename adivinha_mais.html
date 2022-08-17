@@ -1,0 +1,23 @@
+<! Questão para trabalhar conhecimentos da interação do JS com HTML, com o jogo que a pessoa tenta adivinhar um "número pensado">
+<meta charset="UTF-8">
+<h1>Vamos brincar?</h1>
+<h2>Entre 0 e 10 que número estou pensando? </h2>
+<input>
+<button>OK</button>
+
+<script>
+    var segredo = Math.round(Math.random()* 10);
+    var inputHTML = document.querySelector("input");
+    inputHTML.focus() //coloca focus (cursor piscando) na caixa de texto
+    function verifica(){
+        if(inputHTML.value == segredo) {
+        alert("Você acertou!!!")
+        }else {
+            alert("Você errou!!! Tente novamente")
+        }
+        inputHTML.value = "";
+        inputHTML.focus();
+    }
+    var botao = document.querySelector("button");
+    botao.onclick = verifica;
+</script>

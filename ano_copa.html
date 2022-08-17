@@ -1,0 +1,21 @@
+<! Questão para praticar conhecimentos de estruturas de repetição. Programa para descobrir os anos que tiveram copa até a data limite estabelecida pelo usuário>
+<meta charset="UTF-8">
+
+<script>
+    function pulaLinha() {
+        document.write("<br>");
+    }
+    function mostra(msg){
+        document.write(msg);
+        pulaLinha();
+    }
+
+    var anoCopa = 1930;
+    var limite = parseInt(prompt("Você quer saber os anos que tiveram copa do mundo? Até que ano?"))
+
+    while(anoCopa <= limite) {
+        mostra("Teve copa em " + anoCopa);
+        anoCopa = anoCopa + 4;
+    }
+    mostra("Fim!")
+</script>

@@ -1,0 +1,19 @@
+<! Questão para praticar conhecimentos de estruturas de repetição. Programa que mostra tabuada que usuário indicar.>
+<meta charset="UTF-8">
+
+<script>
+    function pulaLinha() {
+        document.write("<br>");
+    }
+    function mostra(msg){
+        document.write(msg);
+        pulaLinha();
+    }
+
+    
+    var numero = parseInt(prompt("Tabuada de qual número gostaria de ver?"))
+    for(var multiplicador = 1; multiplicador <= 10; multiplicador ++) {
+        var resultado = numero * multiplicador;
+        mostra(numero + " x "+ multiplicador + " = " + resultado);
+    }
+</script>

@@ -1,0 +1,30 @@
+<! Questão para trabalhar conhecimentos de converão/definição da variável, calculando número de pontos de um campeonato de futebol. O programa considera 3 pontos para cada vitória e 1 ponto para cada empate.>
+<meta charset="UTF-8">
+
+<script>
+    function pulaLinha() {
+        document.write("<br>");
+    }
+    function mostra(msg){
+        document.write(msg);
+        pulaLinha();
+    }
+
+    var vitorias = parseInt(prompt("Qual número de vitórias de seu time?"));
+    var empates = parseInt(prompt("Qual número de empates de seu time?"));
+    var pontosAnoPassado = parseInt(prompt("Quantos pontos seu time fez ano passado?"));
+
+    var pontos = (vitorias * 3) + empates;
+    mostra("Os pontos do seu time esse ano: " + pontos)
+
+    if(pontos>pontosAnoPassado) {
+        document.write("Seu time esteve melhor esse ano!")
+    } 
+    if(pontos<pontosAnoPassado) {
+        document.write("Seu time esteve pior esse ano!")
+    } 
+    if(pontos==pontosAnoPassado) {
+        document.write("Seu time esteve igual ao ano passado!")
+    } 
+    
+</script>

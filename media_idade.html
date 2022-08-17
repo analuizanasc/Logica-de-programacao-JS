@@ -1,0 +1,23 @@
+<! Questão para praticar conhecimentos de estruturas de repetição. Programa que mostra média de idades.>
+<meta charset="UTF-8">
+
+<script>
+    function pulaLinha() {
+        document.write("<br>");
+    }
+    function mostra(msg){
+        document.write(msg);
+        pulaLinha();
+    }
+
+    var totalPessoas = parseInt(prompt("Você deseja calcular a média de quantas pessoas?"));
+    contador = 1;
+    somaIdade = 0;
+    while (contador <= totalPessoas) {
+        var idade = parseInt(prompt("Qual a idade da pessoa " + contador + "?"))
+        somaIdade = somaIdade + idade;
+        var media = somaIdade/totalPessoas
+        contador ++
+    }
+    mostra("A média da idade de todas as idades é:" +  Math.floor(media) + "anos.")
+</script>

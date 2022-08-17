@@ -1,0 +1,26 @@
+<! Questão para praticar conhecimentos de estruturas de repetição. Programa que simula tela de login.>
+<meta charset="UTF-8">
+<script>
+
+    var loginCadastrado = "alura";
+    var senhaCadastrada = "alura321";
+
+    var loginInformado = prompt("Informe seu login");
+    var senhaInformada = prompt("Informe sua senha");
+
+    var contador = 1;
+    if( loginCadastrado == loginInformado && senhaCadastrada == senhaInformada ) {
+        alert("Bem-vindo ao sistema " + loginInformado);
+    } else {
+        while(contador <= 3) {
+            alert("Login inválido. Tente novamente");
+            var loginInformado = prompt("Informe seu login");
+            var senhaInformada = prompt("Informe sua senha");
+            contador ++
+            if ( contador == 3){
+                alert("Ops! Número de tentativas esgotadas. Conta bloqueada!")
+                break
+            }
+        }   
+    }
+</script>

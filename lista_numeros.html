@@ -1,0 +1,20 @@
+<! Questão para praticar conhecimentos de estruturas de repetição. Programa para dizer todos os números entre de 0 e 20, em ordem crescente.>
+<meta charset="UTF-8">
+
+<script>
+    function pulaLinha() {
+        document.write("<br>");
+    }
+    function mostra(msg){
+        document.write(msg);
+        pulaLinha();
+    }
+
+    var inicio = 0;
+    mostra("Os números entre 0 e 20:")
+    while(inicio <= 20) {
+        document.write(inicio + ",");
+            inicio = inicio + 1;
+    }
+    mostra(" Fim!")
+</script>
